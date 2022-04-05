@@ -1,0 +1,8 @@
+io\github\victorleitecosta10\notification\model\entity\Notification.class
+io\github\victorleitecosta10\notification\NotificationApplication.class
+io\github\victorleitecosta10\notification\config\NotificationConfig.class
+io\github\victorleitecosta10\notification\rabbitmq\consumer\NotificationConsumer.class
+io\github\victorleitecosta10\notification\controller\NotificationController.class
+io\github\victorleitecosta10\notification\model\repository\NotificationRepository.class
+io\github\victorleitecosta10\notification\service\NotificationService.class
+io\github\victorleitecosta10\notification\model\entity\Notification$NotificationBuilder.class

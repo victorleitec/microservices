@@ -1,0 +1,10 @@
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\exception\ApiErrors.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\model\entity\Customer.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\model\repository\CustomerRepository.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\controller\CustomerController.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\CustomerApplication.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\exception\EmailAlreadyTakenException.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\advice\CustomerControllerAdvice.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\config\CustomerConfig.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\request\CustomerRegistrationRequest.java
+C:\Users\vNx\IdeaProjects\myservices\customer\src\main\java\io\github\victorleitecosta10\customer\service\CustomerService.java

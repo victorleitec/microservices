@@ -4,11 +4,14 @@ import io.github.victorleitecosta10.amqp.message.RabbitMQMessageProducer;
 import io.github.victorleitecosta10.clients.fraud.client.FraudClient;
 import io.github.victorleitecosta10.clients.fraud.request.FraudCheckResponse;
 import io.github.victorleitecosta10.clients.notification.request.NotificationRequest;
+import io.github.victorleitecosta10.customer.exception.EmailAlreadyTakenException;
 import io.github.victorleitecosta10.customer.model.entity.Customer;
 import io.github.victorleitecosta10.customer.model.repository.CustomerRepository;
 import io.github.victorleitecosta10.customer.request.CustomerRegistrationRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -25,8 +28,12 @@ public class CustomerService {
                 .email(request.getEmail())
                 .build();
 
-//        todo: check if email valid
-//        todo: check if email not taken
+        Optional<Customer> customerFindByEmail = customerRepository.findByEmail(customer.getEmail());
+
+        if (customerFindByEmail.isPresent() && customer.getEmail().equals(customerFindByEmail.get().getEmail())) {
+            throw new EmailAlreadyTakenException("email already taken");
+        }
+
         customerRepository.saveAndFlush(customer);
 
         FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
